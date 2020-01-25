@@ -27,7 +27,7 @@ body {
     bottom: .5em;
     width: calc(var(--width, 0)* 1%);
     min-width: 2rem;
-    max-width: calc(100% - 1em);
+    max-width: calc(100% - 1em); /*value in function calc can be changed to get the desired progress bar limit */
     background-color: #069;
     border-radius: 1em;
     padding : 1em;
