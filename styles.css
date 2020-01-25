@@ -3,15 +3,15 @@
 }
 
 body {
-    padding: 300px;
-    margin: 0 14em;
+    padding: 30px;
 }
 
 .progress-bar {
+    margin: 0 auto;
+    max-width: 700px;
     position: relative;
-    justify-content: center;
-    width: 500px;
-    height: 3em;
+    width: 500px;/* customizable width*/
+    height: 3em;/* customizable height*/
     background-color: #111;
     border-radius: 1.5em;
     color: white;
@@ -27,8 +27,16 @@ body {
     bottom: .5em;
     width: calc(var(--width, 0)* 1%);
     min-width: 2rem;
-    max-width: calc(100% - 1em); /*value in function calc can be changed to get the desired progress bar limit */
-    background-color: #069;
+    max-width: calc(100% - 1em); 
+    /*value in function calc can be changed to get the desired progress bar limit */
+    /*background-color: #069;*/ /* This statement can be used for static colors*/
+    background: #e5405e;
+	/* Old browsers */
+	background: -moz-linear-gradient(left, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e5405e 0%, #ffdb3a 25%, #3fffa2 50%, #3fffa2 50%, #1a9be0 73%, #ba68ed 100%);
     border-radius: 1em;
     padding : 1em;
 

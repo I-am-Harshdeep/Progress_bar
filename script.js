@@ -5,4 +5,4 @@ setInterval(()=> {
     const width = parseFloat(computedStyle.getPropertyValue
         ('--width')) || 0
         progessBar.style.setProperty('--width', width + .1)
-}, 1)
+}, 5)
